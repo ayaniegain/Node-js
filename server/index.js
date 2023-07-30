@@ -7,7 +7,7 @@ const objdata=JSON.parse(apiData)
 
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
-    res.end(objdata);
+    // res.end(objdata);
   } else if (req.url == "/download") {
     res.end("this is download page");
   } else {
